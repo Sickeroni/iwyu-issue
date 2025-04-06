@@ -9,6 +9,8 @@ jobs:
         uses: actions/checkout@v4
       - name: get IWYU
         run: sudo apt-get install iwyu -y
+      - name: iwyu version
+        run: include-what-you-use --version
       - name: Build code
         run: |
           cmake -S ${{ github.workspace }} -B build && cmake --build build

@@ -17,7 +17,7 @@ if(IWYU_PATH)
     -Xiwyu --max_line_length=120 # 120 chars wide
     -Xiwyu --comment_style=long # more details 
     -Xiwyu --no_fwd_decls # no forward declaration suggestions
-    -Xiwyu --no_default_mappings
+    #-Xiwyu --no_default_mappings
   )
 endif()
 
